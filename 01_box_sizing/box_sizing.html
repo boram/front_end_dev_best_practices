@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet">
+    <link href="box_sizing.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>CSS Box-Sizing Examples</h1>
+
+    <section>
+      <h2>
+        <code>box-sizing: content-box</code>
+      </h2>
+      <div class='box--content-box'>
+        <div class='box__inner'>
+          Ramps organic VHS brunch, blue bottle offal direct trade lo-fi gluten-free. Hammock chia thundercats tattooed, jean shorts cold-pressed food truck DIY taxidermy. Selfies master cleanse kogi microdosing freegan. Chillwave fanny pack stumptown waistcoat selvage green juice.
+        </div>
+      </div>
+      <pre>
+        .box {
+          width: 400px;
+          padding: 20px;
+          border-size: 10px;
+          box-sizing: content-box;
+        }
+      </pre>
+    </section>
+
+    <section>
+      <h2><code>box-sizing: border-box</code></h2>
+      <div class='box--border-box'>
+        <div class='box__inner'>
+          Ramps organic VHS brunch, blue bottle offal direct trade lo-fi gluten-free. Hammock chia thundercats tattooed, jean shorts cold-pressed food truck DIY taxidermy. Selfies master cleanse kogi microdosing freegan. Chillwave fanny pack stumptown waistcoat selvage green juice.
+        </div>
+      </div>
+      <pre>
+        .box {
+          width: 400px;
+          padding: 20px;
+          border-size: 10px;
+          box-sizing: border-box;
+        }
+      </pre>
+      <p>
+        Padding and border size are included inside the width
+      </p>
+    </section>
+
+  </body>
+</html>
